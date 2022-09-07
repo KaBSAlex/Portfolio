@@ -18,32 +18,40 @@
                 <ul>
                     <li class="about_slide" id="click_about"><a href="#about">ABOUT</a></li>
                     <li id="click_project"><a href="#project">PROJECTS</a></li>
-                    <li id="click_contact"><a href="#">CONTACT</a></li>
+                    <li id="click_contact"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </aside>
-
+        <div class="btn_show_aside">
+                <img src="./icons/arrow-left-o.svg" alt="">
+        </div>
         <main class="stack_over track">
-            <div class="absolute">
+            <div class="absolute track">
                 <section id="about" class="index_appear">
                     <div class="img_avatar">
+                        <h1>MIKAEL ALEXANDRE  - KABSALEX</h1>
+                        <div class="line"></div>
+                        <p>Olá, sou desenvolvedor Front-End apaixonado por tecnologia. 
+                            <br> Atualmente sou estagiário em Desenvolvimento de Sistema. </p>
                         <img src="/img/ReadyPlayerMe-Avatar.png" alt="">
                     </div>
                     <div class="words">
-                        <h1>Mikael Alexandre - kBSAlex</h1>
-                        <div class="line"></div>
-                        <p>Sou um desenvolvedor Front-End apaixonado por tecnologia. Adoro desenvolver sites, acho lindo
-                            como a estrutura vai criando formas.</p>
+                        
                         <div class="tech">
                             <h1>TECHNOLOGYS</h1>
-                            <div>
+                            <div class="img_icons">
                                 <img src="/icons/script-java.png" alt="">
                                 <img src="/icons/css-3.png" alt="">
                                 <img src="/icons/html5.png" alt="">
                             </div>
                         </div>
+
                         <button class="btn">
                             <span>CONTACT</span>
+                        </button>
+
+                        <button class="btn">
+                            <a href="#" download="../Mikael Alexandre.pdf">DOWNLOAD CV</a>
                         </button>
                     </div>
                 </section>
@@ -77,12 +85,20 @@
                         </div>
                     </div>
                 </section>
+
+                <section id="contact" class="index_disappear">
+                    <div>
+                        <h1>CONTACT</h1>
+                    </div>
+                </section>
+
             </div>
         </main>
 
     </div>
 
-    <script src="script/script.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/aside.js"></script>
 </body>
 
 </html>

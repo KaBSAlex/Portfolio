@@ -18,14 +18,26 @@ ul {
 
 h1 {
     font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+body {
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+
+main {
+    position: relative;
+    flex: 7;
 }
 
 aside {
+    display: ;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
 
     position: relative;
-    flex: 1;  
+    flex: 1.5;  
 
     justify-content: center;
     text-align: center;
@@ -45,16 +57,24 @@ aside nav ul li:hover {
     cursor: pointer;
 }
 
+.btn_show_aside {
+    position: relative;
+    align-self: center;
+
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.btn_show_aside img {
+    height: 5rem;
+
+}
+
 .container {
-    background: linear-gradient(to right, #000000, #261e26, #3a3a4e, #3c5c78, #2d8298, #2d8298, #2d8298, #2d8298, #3c5c78, #3a3a4e, #261e26, #000000);
     display: flex;
     height: 100vh;
 }
 
-main {
-    position: relative;
-    flex: 7;
-}
 
 section {
     position: absolute;
@@ -70,10 +90,12 @@ section {
     
     top: 0;
     bottom: 0;
+    font-size: 25px;
 }
 
 #project {
     max-width: 100%;
+    font-size: 16.3px;
 }
 
 .img_avatar img {
@@ -88,6 +110,7 @@ section {
     position: relative;
     margin-top: 4rem;
     padding: 10px 25px;
+        
 
     border: 1px solid black;
     font-size: 15px;
@@ -160,18 +183,30 @@ section {
 }
 
 .line {
-    height: 3px;
+    margin: 2rem 0;
+    height: 4px;
     background: linear-gradient(to bottom, #191b1d, #273c46, #2c626d, #318b8e, #46b5a6);
+}
+
+.img_icons {
+    display: flex;
+    align-items: center;
+}
+
+.img_icons img {
+    margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 
 
-
-
+/* TRANSITION */
 .index_appear {
+    opacity: 1;
     z-index: 1;
 }
 
 .index_disappear {
+    opacity: 0;
     z-index: -1;
 }
